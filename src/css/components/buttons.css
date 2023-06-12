@@ -1,0 +1,28 @@
+button {
+  border: 0;
+  cursor: pointer;
+  width: max-content;
+  background-color: transparent;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+}
+.btn-with-icon {
+  gap: 8px;
+  font-weight: 500;
+  align-items: center;
+}
+.secondary-btn {
+  padding: 8px 24px;
+  border-radius: 5px;
+  border: 1.5px solid var(--blue-1);
+}
+.cta-btn {
+  background-color: var(--blue-1);
+  color: var(--white);
+  font-size: 14px;
+  font-weight: 500;
+  padding-block: 14.5px;
+  padding-inline: 27.71px;
+}

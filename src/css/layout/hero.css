@@ -1,0 +1,24 @@
+.hero-section {
+  display: grid;
+  place-self: center;
+}
+.hero__focal-point {
+  gap: 24px;
+  margin-bottom: 100px;
+}
+.hero__point-tracker {
+  position: relative;
+  align-items: flex-start;
+  justify-content: space-between;
+  isolation: isolate;
+}
+.hero__point-tracker::after {
+  content: "";
+  position: absolute;
+  transform: translate(-50%, -50%);
+  top: 50%;
+  left: 50%;
+  border: dashed 1 px rgb(216, 216, 216);
+  width: 90%;
+  z-index: -1;
+}

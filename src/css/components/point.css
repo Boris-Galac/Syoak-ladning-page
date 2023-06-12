@@ -1,0 +1,47 @@
+.point {
+  position: relative;
+  display: grid;
+  place-items: center;
+  gap: 12px;
+  isolation: isolate;
+}
+.point:after {
+  content: "";
+  position: absolute;
+  background-color: var(--bg-clr);
+  aspect-ratio: 1;
+  border-radius: 100vmax;
+  inset: 0;
+  z-index: -1;
+}
+.point:not(:first-child):after {
+  scale: 3;
+}
+.point:first-child:after {
+  scale: 2;
+}
+.point__circle {
+  position: relative;
+  aspect-ratio: 1;
+  border-radius: 100vmax;
+  width: 13.33px;
+  background-color: var(--blue-1);
+  outline: 1px solid var(--blue-1);
+  outline-offset: 3px;
+  isolation: isolate;
+}
+.point__label {
+  color: var(--orange-1);
+  font-weight: 500;
+  position: absolute;
+  bottom: -30px;
+  left: 0;
+  font-size: 13px;
+}
+.point__focal {
+  position: relative;
+  background-color: var(--orange-1);
+  outline: 1px solid var(--orange-1);
+  scale: 1.5;
+  margin-left: 24px;
+}

@@ -1,0 +1,23 @@
+.d-flex {
+  display: flex;
+}
+.flex-row {
+  display: flex;
+  flex-direction: row;
+}
+.flex-col {
+  display: flex;
+  flex-direction: column;
+}
+.d-grid {
+  display: grid;
+}
+.grid-center {
+  display: grid;
+  place-items: center;
+}
+.container {
+  min-height: 100vh;
+  width: min(100% - 32px, 1330px);
+  margin-inline: auto;
+}

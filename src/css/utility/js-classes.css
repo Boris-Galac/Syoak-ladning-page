@@ -1,0 +1,4 @@
+.nav[data-visible="false"] {
+  opacity: 0;
+  pointer-events: none;
+}

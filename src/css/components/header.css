@@ -1,0 +1,43 @@
+.header {
+  position: fixed;
+  inset: auto 0;
+  padding-inline: 16px;
+  justify-content: space-between;
+  padding-block: 28px;
+  background-color: var(--bg-clr);
+}
+.nav {
+  position: fixed;
+  inset: 0;
+  height: 100%;
+}
+.nav__list {
+  flex-direction: column;
+  align-items: flex-end;
+  padding: 20vw;
+  padding-top: 20vh;
+  gap: 10vh;
+  order: 2;
+}
+.nav__link {
+  color: var(--nav-link-clr);
+  font-size: 1rem;
+}
+.ham-btn {
+  position: relative;
+  aspect-ratio: 2/1;
+  width: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  z-index: 20;
+}
+.ham-btn__line {
+  height: 2px;
+  width: 100%;
+  background-color: var(--dark-1);
+}
+.header-login-links {
+  gap: 44px;
+  order: 1;
+}

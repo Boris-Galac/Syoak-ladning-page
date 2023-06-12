@@ -1,0 +1,10 @@
+:root {
+  --bg-clr: hsl(0, 0%, 98%);
+  --nav-link-clr: hsla(240, 1%, 19%, 1);
+  --black: hsl(0, 0%, 0%);
+  --white: hsl(0, 0%, 100%);
+  --paragraph-clr: hsl(0, 0%, 42%);
+  --dark-1: hsl(240, 1%, 19%);
+  --blue-1: hsla(213, 100%, 35%, 1);
+  --orange-1: hsl(25, 100%, 54%);
+}
