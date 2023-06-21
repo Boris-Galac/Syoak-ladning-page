@@ -4,11 +4,15 @@
 @import "global/colors.css";
 /* layout */
 @import "layout/hero.css";
+@import "layout/solution.css";
+@import "layout/achievements.css";
+@import "layout/contact.css";
 /* components */
 @import "components/header.css";
 @import "components/buttons.css";
-@import "components/buttons.css";
 @import "components/point.css";
+@import "components/solution-slider.css";
+@import "components/footer.css";
 /* utility */
 @import "utility/js-classes.css";
 @import "utility/spacing.css";

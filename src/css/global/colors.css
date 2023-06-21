@@ -1,10 +1,13 @@
 :root {
   --bg-clr: hsl(0, 0%, 98%);
+  --lightgray: hsl(214, 15%, 66%);
+  --border: hsla(0, 0%, 88%, 1);
   --nav-link-clr: hsla(240, 1%, 19%, 1);
   --black: hsl(0, 0%, 0%);
   --white: hsl(0, 0%, 100%);
   --paragraph-clr: hsl(0, 0%, 42%);
   --dark-1: hsl(240, 1%, 19%);
   --blue-1: hsla(213, 100%, 35%, 1);
+  --dark-blue: hsl(213, 100%, 24%);
   --orange-1: hsl(25, 100%, 54%);
 }

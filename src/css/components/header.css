@@ -5,18 +5,24 @@
   justify-content: space-between;
   padding-block: 28px;
   background-color: var(--bg-clr);
+  z-index: 100;
+}
+.header.active {
+  transition: 0.3s;
+  box-shadow: 0 3px 16px hsla(207, 80%, 18%, 0.123);
 }
 .nav {
   position: fixed;
   inset: 0;
-  height: 100%;
+  height: 100vh;
+  background-color: var(--bg-clr);
 }
 .nav__list {
   flex-direction: column;
   align-items: flex-end;
   padding: 20vw;
   padding-top: 20vh;
-  gap: 10vh;
+  gap: 7vh;
   order: 2;
 }
 .nav__link {
@@ -31,13 +37,83 @@
   flex-direction: column;
   justify-content: space-between;
   z-index: 20;
+  transition: 0.5s;
 }
 .ham-btn__line {
   height: 2px;
   width: 100%;
   background-color: var(--dark-1);
+  transform: translateY(-50%);
+  top: 50%;
+  transition: 0.5s;
 }
-.header-login-links {
-  gap: 44px;
-  order: 1;
+.ham-btn__line.active {
+  position: absolute;
+}
+.ham-btn__line:nth-child(1).active {
+  transform: rotateZ(45deg);
+}
+.ham-btn__line:nth-child(2).active {
+  transform: translateX(100%);
+  animation: middle-line 0.5s ease-in-out forwards;
+}
+@keyframes middle-line {
+  from {
+    transform: translateX(0%);
+    opacity: 1;
+  }
+  to {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+}
+.ham-btn__line:nth-child(3).active {
+  transform: rotateZ(-45deg);
+}
+.header-login-link {
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+  margin-right: 20vw;
+  gap: 24px;
+}
+
+@media (min-width: 960px) {
+  .logo-mobile {
+    display: none;
+  }
+  .logo-desktop {
+    position: fixed;
+    left: calc(100% - 93%);
+    top: 30px;
+  }
+  .header {
+    padding-inline: 55px;
+  }
+  .nav {
+    position: fixed;
+    inset: 0;
+    height: 100vh;
+    background-color: var(--bg-clr);
+  }
+  .nav__list {
+    order: 1;
+    position: static;
+    flex-direction: row;
+    align-items: center;
+    padding: 0;
+    padding-top: 0;
+    gap: 44px;
+  }
+  .ham-btn {
+    display: none !important;
+  }
+  .header-login-link {
+    order: 2;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-right: 0;
+    gap: 24px;
+  }
 }

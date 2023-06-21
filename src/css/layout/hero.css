@@ -11,6 +11,8 @@
   align-items: flex-start;
   justify-content: space-between;
   isolation: isolate;
+  margin-bottom: 172px;
+  z-index: -1;
 }
 .hero__point-tracker::after {
   content: "";
@@ -18,7 +20,44 @@
   transform: translate(-50%, -50%);
   top: 50%;
   left: 50%;
-  border: dashed 1 px rgb(216, 216, 216);
-  width: 90%;
+  border: dashed 1px rgb(216, 216, 216);
+  width: 100%;
   z-index: -1;
+}
+.desktop-arrow {
+  display: none;
+}
+
+@media (min-width: 960px) {
+  body {
+    display: grid;
+    grid-template-columns: 20vw auto;
+  }
+  .main {
+    padding-top: 234px;
+  }
+  #root {
+    display: contents;
+  }
+  .left-desktop-col {
+    position: relative;
+    z-index: 150;
+  }
+  .border {
+    position: absolute;
+    height: 100%;
+    border-right: 1px solid var(--border);
+    width: 20vw;
+    z-index: 100;
+  }
+  .desktop-arrow {
+    display: block;
+    position: absolute;
+    left: 50%;
+    top: 50vh;
+  }
+  .footer {
+    grid-column: 2/-1;
+    border-left: 1px solid var(--border);
+  }
 }
