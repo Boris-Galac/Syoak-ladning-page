@@ -4,12 +4,12 @@
   overflow-x: hidden;
   background-color: var(--white);
   width: 100%;
-  padding-block: 180px;
+  padding-block: 64px;
 }
 .solution-slider:after {
   content: "";
   position: absolute;
-  top: 93px;
+  top: 233px;
   left: 81px;
   width: 100%;
   border: 1px dashed #cdcdcd;
@@ -36,7 +36,7 @@
   position: absolute;
   justify-content: space-between;
   gap: 48px;
-  top: 86px;
+  top: 226px;
   left: 13px;
   z-index: 5;
 }
@@ -70,10 +70,8 @@
 @media (min-width: 960px) {
   .slide {
     display: flex;
-    /* flex-wrap: nowrap; */
     width: 100vw;
     background-color: var(--white);
-    /* display: grid; */
     grid-template-rows: 20% 80%;
   }
   .point-wrapper {
@@ -87,6 +85,7 @@
     position: relative;
     left: -70px;
     padding-inline: 70px;
+    padding-block: 180px;
   }
   .solution-slider__btns {
     position: absolute;

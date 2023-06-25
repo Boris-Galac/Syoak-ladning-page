@@ -114,7 +114,7 @@ function App() {
 
           {/* solution section */}
 
-          <section className="solution mb-56">
+          <section className="solution">
             <article className="solution__article">
               <h2 className="solution__heading mb-40">SYOAK Solution</h2>
               <p className="solution__paragraph">
@@ -149,7 +149,7 @@ function App() {
           </section>
 
           {/* solution slider section */}
-          <section className="solution-slider mb-56">
+          <section className="solution-slider">
             <div className="solution-slider__btns d-flex">
               <button
                 tabIndex={0}

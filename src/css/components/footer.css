@@ -1,7 +1,7 @@
 .footer {
   position: relative;
   border-top: 1px solid var(--border);
-  z-index: 1000;
+  z-index: 99;
 }
 .footer__wrapper {
   padding: 57px 70px;

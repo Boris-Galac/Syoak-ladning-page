@@ -1,3 +1,6 @@
+.solution {
+  padding-block: 64px;
+}
 .solution__article {
   margin-bottom: 64px;
 }
